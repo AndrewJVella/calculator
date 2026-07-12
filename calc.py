@@ -1,7 +1,7 @@
 
 from math import *
 def main():
-	print("\nThis is a calculator, written in python.\nIt's like an online calculator tool, without silly click buttons;\or like a search bar without nonsensical querey suggestions.\nYou can just use the shell, but this imports the math library and captures errors neatly.")
+	print("\nThis is a calculator, written in python.\nIt's like an online calculator tool, without silly click buttons;\nor like a search bar without nonsensical querey suggestions.\nYou can just use the shell, but this imports the math library and captures errors neatly.")
 	print()
 	print("a + b\tadds a and b")
 	print("a - b\tsubtracts b from a")
