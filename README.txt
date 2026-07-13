@@ -10,7 +10,7 @@ a // b  gets the floor of a / b
 a % b   gets the remainder of a / b
 
 (a + b) * c     parentheses are evaluated first
-round(a,x)      rounds a to place value x
+round(a,b)      rounds a to place value b
 abs(a)          gets absolute value of a
 floor(a)        gets floor of a
 ceil(a)         gets ceiling of a
