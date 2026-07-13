@@ -1,36 +1,66 @@
 
 from math import *
+
 def main():
-	print("\nThis is a calculator, written in python.\nIt's like an online calculator tool, without silly click buttons;\nor like a search bar without nonsensical querey suggestions.\nYou can just use the shell, but this imports the math library and captures errors neatly.")
+	help()
+	ans = None
+
+	while ans != "":
+		ans = input("\nProvide an expression to evaluate, (or type '?' for help):\n> ").lower().strip()
+		if ans == "":
+			print("Goodbye!")
+			return
+		if ans == "?":
+			help()
+			continue
+
+
+		try:
+			ans = eval(ans)
+
+			if isinstance(ans, float):
+				ans = round(ans, 6)
+			
+			if (ans) == int(ans):
+				ans = int(ans)
+
+
+			print(">", ans)
+		except ValueError:
+			print("> Value Error")
+		except TypeError:
+			print("> Type Error")
+		except ZeroDivisionError:
+			print("> Zero Division Error")
+		except SyntaxError:
+			print("> Syntax Error")
+		except Exception:
+			print("> Error")
+
+def help():
+	print("\nThis is a calculator. No clicking. No ads. No spam. \nPython3: MIT License. Use Ctrl+C to halt. Thanks!")
 	print()
 	print("a + b\tadds a and b")
 	print("a - b\tsubtracts b from a")
 	print("a * b\tmultiplies a and b")
 	print("a ** b\tgets a to the power of b")
 	print("a / b\tdivides a over b")
-	print("a // b\ttakes the floor of a / b")
-	print("a % b\ttakes the remainder of a / b")
-	print()
-	print("'&', '|', '~', '^' are bitwise operators: and, or, not, xor")
+	print("a // b\tgets the floor of a / b")
+	print("a % b\tgets the remainder of a / b")
 	print()
 	print("(a + b) * c\tparentheses are evaluated first")
 	print("round(a,x)\trounds a to place value x")
-	print("floor(a)\ttakes floor of a")
-	print("ceil(a)\t\ttakes ceiling of a")
-	print("pow(a,b)\talso gets a to the power of b")
+	print("abs(a)\t\tgets absolute value of a")
+	print("floor(a)\tgets floor of a")
+	print("ceil(a)\t\tgets ceiling of a")
 	print("sqrt(a)\t\tgets square root of a")
-	print("log(a)\t\tgets log base 10 of a")
-	print("\nPlease read the docs for the math library for more functions.")
-	
-	i = None
-	while i != "":
-		i=input("\nProvide an expression to evaluate.\n> ").lower().strip()
-		try:
-			print(eval(i))
-		except ValueError:
-			print("Invalid Expression")
-		except ZeroDivisionError:
-			print("Zero Division Error")
-		except Exception:
-			print("Error")
-main()
+	print("log(a)\t\tgets natural log of a")
+	print()
+	print("Trigonometric functions are also supported")
+	print("Constants: pi (3.1415), e (2.7182), tau (6.2831)")
+	print("'&', '|', '~', '^' are bitwise operators: and, or, not, xor")
+
+
+
+if __name__ == '__main__':
+	main()
