@@ -56,9 +56,9 @@ def help():
 	print("sqrt(a)\t\tgets square root of a")
 	print("log(a)\t\tgets natural log of a")
 	print()
-	print("Trigonometric functions are also supported")
-	print("Constants: pi (3.1415), e (2.7182), tau (6.2831)")
-	print("'&', '|', '~', '^' are bitwise operators: and, or, not, xor")
+	print("Trigonometric functions are also supported.")
+	print("Constants: pi (3.1415), e (2.7182), tau (6.2831).")
+	print("'&', '|', '~', '^'; are bitwise operators: and, or, not, xor.")
 
 
 
