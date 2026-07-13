@@ -8,8 +8,8 @@ a ** b  gets a to the power of b
 a / b   divides a over b
 a // b  gets the floor of a / b
 a % b   gets the remainder of a / b
-
 (a + b) * c     parentheses are evaluated first
+
 round(a, b)     rounds a to place value b
 abs(a)          gets absolute value of a
 floor(a)        gets floor of a
