@@ -49,7 +49,7 @@ def help():
 	print("a % b\tgets the remainder of a / b")
 	print()
 	print("(a + b) * c\tparentheses are evaluated first")
-	print("round(a,x)\trounds a to place value x")
+	print("round(a,b)\trounds a to place value b")
 	print("abs(a)\t\tgets absolute value of a")
 	print("floor(a)\tgets floor of a")
 	print("ceil(a)\t\tgets ceiling of a")
