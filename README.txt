@@ -17,6 +17,6 @@ ceil(a)         gets ceiling of a
 sqrt(a)         gets square root of a
 log(a)          gets natural log of a
 
-Trigonometric functions are also supported
-Constants: pi (3.1415), e (2.7182), tau (6.2831)
-'&', '|', '~', '^' are bitwise operators: and, or, not, xor
+Trigonometric functions are also supported.
+Constants: pi (3.1415), e (2.7182), tau (6.2831).
+'&', '|', '~', '^'; are bitwise operators: and, or, not, xor.
